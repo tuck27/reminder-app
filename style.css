@@ -3,8 +3,8 @@
     justify-content: center;
     flex-direction: column;
     background-color: rgb(190, 77, 77);
-    margin-left: 300px;
-    margin-right: 400px;
+    margin-left: 500px;
+    margin-right: 500px;
 }
 
 h1 {
@@ -19,8 +19,8 @@ button {
     background-color: rgb(255, 207, 77);
     text-decoration-color: black;
     font-size: 15px;
+    border-radius: 7px;
 }
-
 
 .reminder-container {
     display: flex;
@@ -29,4 +29,17 @@ button {
     background-color: white;
     align-self: center;
     border-radius: 5px;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.input-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
