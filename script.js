@@ -1,16 +1,19 @@
 const backButton = document.getElementById("back-button");
 const nextButton = document.getElementById("next-button");
 const addButton = document.getElementById("add-button");
-var input = new Array();
-const reminders = [];
 const counter = document.getElementById("counter");
+let reminders = [];
 
-function insert(val){
-    input[input.length] = val;
+function addReminder() {
+    let input = document.getElementById("reminder-input").value;
+    reminders.push(input);
+    document.getElementById("reminder-input").value = ""; // Clear the input field
 }
-function show(){
-    for(i = 0; i < input.length; i++);
-}
+
+addButton.addEventListener("click", () => {
+    addReminder();
+});
+
 
 
 //array to store reminders
